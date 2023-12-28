@@ -13,10 +13,10 @@ const Listfooter = () => {
   } = useContext(DataContext);
 
   return (
-    <footer className="dark:text-primary select-none font-[500] xl:w-[40%] lg:w-[60%] w-[90%] md:w-[600px] md:text-[16px] text-[14.5px] md:rounded-b-lg  text-secondary">
+    <footer className="dark:text-primary  select-none font-[500] xl:w-[40%] lg:w-[60%] w-[90%] md:w-[600px] md:text-[16px] text-[14.5px] md:rounded-b-lg  text-secondary">
       <section className="flex rounded-b-md  dark:bg-white shadow-back dark:shadow-back bg-primary w-[100%]  justify-between">
         <div className="flex-cls">
-          <h1 className="p-3">{`${count} items left`}</h1>
+          <h1 className="p-3  text-[15px] max-[373px]:text-[13px] max-[413px]:text-[13px] ">{`${count} items left`}</h1>
         </div>
         <div className="md:flex hidden  justify-center">
           <button
@@ -67,7 +67,7 @@ const Listfooter = () => {
         </div>
         <div className="flex-cls">
           <button
-            className="p-3 dark:hover:text-gray-800 hover:text-white"
+            className="p-3  text-[15px]  max-[373px]:text-[13px] max-[413px]:text-[13px]  dark:hover:text-gray-800 hover:text-white"
             onClick={handleClearcompleted}
           >
             Clear completed
@@ -75,7 +75,7 @@ const Listfooter = () => {
         </div>
       </section>
       {/* for mobile view */}
-      <section className="md:hidden  mt-4 rounded-md dark:bg-white bg-primary">
+      <section className="md:hidden shadow-back mt-4 rounded-md dark:bg-white bg-primary">
         <div className="flex justify-center">
           <button
             className="p-2"

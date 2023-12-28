@@ -3,38 +3,52 @@ import { createContext, useEffect, useState } from "react";
 const DataContext = createContext({});
 
 export const DataProvider = ({ children }) => {
-  const [originalList, setOriginalList] = useState(
-    // JSON.parse(localStorage.getItem("items")) && [
-      [
-        {
-          id: 1,
-          checked: true,
-          itemName: "complete online javascript course",
-        },
-        {
-          id: 2,
-          checked: false,
-          itemName: "jog around the park 3x",
-        },
-        {
-          id: 3,
-          checked: false,
-          itemName: "10 minutes meditation",
-        },
-        {
-          id: 4,
-          checked: false,
-          itemName: "read for 1 hour",
-        },
-        {
-          id: 5,
-          checked: false,
-          itemName: "complete todo app on frontend mentor",
-        },
-      
-    ]
+  const [originalList, setOriginalList] = useState([]);
 
-  );
+
+  useEffect(() => {
+    const storedTasks = JSON.parse(localStorage.getItem("items"));
+    console.log(storedTasks);
+    const defaultTasks = [
+      {
+        id: 1,
+        checked: true,
+        itemName: "complete online javascript course",
+      },
+      {
+        id: 2,
+        checked: false,
+        itemName: "jog around the park 3x",
+      },
+      {
+        id: 3,
+        checked: false,
+        itemName: "10 minutes meditation",
+      },
+      {
+        id: 4,
+        checked: false,
+        itemName: "read for 1 hour",
+      },
+      {
+        id: 5,
+        checked: false,
+        itemName: "complete todo app on frontend mentor",
+      },
+    ];
+
+    const tasksToUse =  storedTasks.length===0?defaultTasks:storedTasks;
+   
+
+    localStorage.setItem("items", JSON.stringify(tasksToUse));
+    setOriginalList(tasksToUse);
+    setlist(tasksToUse);
+    console.log(tasksToUse);
+  }, []);
+  const [list, setlist] = useState(originalList);
+  const [count, setcount] = useState("0");
+  const [newitem, setnewitem] = useState("");
+  const [indicator, setindicator] = useState("all");
 
   const [isDarkMode, setIsDarkMode] = useState("white");
 
@@ -50,10 +64,7 @@ export const DataProvider = ({ children }) => {
     const mode = isDarkMode === "white" ? "dark" : "white";
     setIsDarkMode(mode);
   };
-  const [list, setlist] = useState(originalList);
-  const [count, setcount] = useState("0");
-  const [newitem, setnewitem] = useState("");
-  const [indicator, setindicator] = useState("all");
+
   const handleActive = () => {
     let listItems = originalList.filter((item) => !item.checked);
     setlist(listItems);

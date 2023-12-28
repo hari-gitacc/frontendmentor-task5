@@ -16,12 +16,12 @@ function App() {
             <Input />
           </div>
           <div className="min-h-[60vh] bg-bottom dark:bg-white ">
-            <div className="flex flex-col md:translate-y-[-2.5rem] translate-y-[-3.5rem] items-center w-[100%]">
+            <div className="flex flex-col md:translate-y-[-2.2rem] translate-y-[-3rem] items-center w-[100%]">
               <TodosLi />
               <Listfooter />
             </div>
           </div>
-          <div class="attribution">
+          <div className="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="www.linkedin.com/in/hari-prasanth-developer"  target="_blank">hari prasanth</a>.
   </div>

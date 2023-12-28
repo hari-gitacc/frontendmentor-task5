@@ -6,7 +6,7 @@ const TodosLi = () => {
     useContext(DataContext);
 
   return (
-    <section className=" flex-cls lg:w-[60%] xl:w-[40%] md:w-[600px] select-none w-[90%]   ">
+    <section className=" flex-cls lg:w-[60%] xl:w-[40%] md:w-[600px] select-none w-[90%] ">
       <ul className=" bg-primary ul-box shadow-back dark:shadow-back dark:bg-white  text-secondary flex flex-col rounded-t-lg  w-[100%]">
         {list.map((item) => (
           <li
@@ -19,12 +19,12 @@ const TodosLi = () => {
                 onChange={() => handleCheck(item.id)}
                 type="checkbox"
                 checked={item.checked}
-                className="peer appearance-none h-5 rounded-full border-secondary   w-5 border-[1.5px] translate-y-1 checked:bg-gradcheck checked:bg-center  checked:bg-no-repeat"
+                className="peer appearance-none h-5 rounded-full border-secondary   w-5 border-[1.5px] translate-y-1 checked:bg-gradcheck checked:bg-center  checked:bg-no-repeat "
                 htmlFor="checkbox"
               />
            
               <label
-                className="ml-5"
+                className="ml-5 text-[15px] max-[373px]:ml-3 max-[373px]:text-[10.8px] max-[413px]:text-[13px] "
                 style={
                   isDarkMode === "white"
                     ? item.checked
@@ -37,7 +37,7 @@ const TodosLi = () => {
                 htmlFor={item.itemName}
               >
                    <span
-                className="absolute left-[1.3rem] top-[1.6rem]"
+                className="absolute md:left-[1.3rem] left-[1.5rem] top-[24.8px] md:top-[1.6rem]"
                 id={item.itemName}
                 style={
                   item.checked === true
@@ -74,11 +74,7 @@ const TodosLi = () => {
                 />
               </svg>
             </button>
-            {/* <FaTrashAlt
-          role="button"
-          tabIndex={0}
-          onClick={() => handleDelete(item.id)}
-        /> */}
+      
           </li>
         ))}
       </ul>
