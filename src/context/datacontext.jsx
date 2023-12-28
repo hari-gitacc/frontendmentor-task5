@@ -8,7 +8,6 @@ export const DataProvider = ({ children }) => {
 
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem("items"));
-    console.log(storedTasks);
     const defaultTasks = [
       {
         id: 1,
@@ -43,7 +42,6 @@ export const DataProvider = ({ children }) => {
     localStorage.setItem("items", JSON.stringify(tasksToUse));
     setOriginalList(tasksToUse);
     setlist(tasksToUse);
-    console.log(tasksToUse);
   }, []);
   const [list, setlist] = useState(originalList);
   const [count, setcount] = useState("0");
