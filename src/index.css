@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .flex-cls {
+      @apply flex justify-center items-center;
+    }
+  }
+
+  .root{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(./assets/images/icon-check.svg);
+  }
+
+
