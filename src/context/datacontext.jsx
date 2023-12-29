@@ -32,6 +32,11 @@ export const DataProvider = ({ children }) => {
       {
         id: 5,
         checked: false,
+        itemName: "pick up groceries",
+      },
+      {
+        id: 6,
+        checked: false,
         itemName: "complete todo app on frontend mentor",
       },
     ];

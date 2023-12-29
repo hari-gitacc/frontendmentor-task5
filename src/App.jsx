@@ -11,12 +11,12 @@ function App() {
     <DataProvider>
       <main className="">
         <div className="sm:w-[100%] md:w-[100%]">
-          <div className="h-[40vh] flex-col flex items-center  justify-center dark:bg-light bg-dark">
+          <div className="min-h-[30vh] md:h-[40vh] flex-col flex items-center  justify-center dark:bg-light bg-dark">
             <Heading />
             <Input />
           </div>
-          <div className="min-h-[60vh] bg-bottom dark:bg-white ">
-            <div className="flex flex-col md:translate-y-[-2.7rem] translate-y-[-3rem] items-center w-[100%]">
+          <div className="min-h-[70vh] md:min-h-[70vh] bg-bottom dark:bg-white ">
+            <div className="flex flex-col md:translate-y-[-2.7rem] translate-y-[-1rem] items-center w-[100%]">
               <TodosLi />
               <Listfooter />
             </div>
