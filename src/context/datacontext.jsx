@@ -36,7 +36,7 @@ export const DataProvider = ({ children }) => {
       },
     ];
 
-    const tasksToUse =  defaultTasks||storedTasks;
+    const tasksToUse = Array.isArray(storedTasks) && storedTasks.length > 0 ? storedTasks : defaultTasks;
    
 
     localStorage.setItem("items", JSON.stringify(tasksToUse));
