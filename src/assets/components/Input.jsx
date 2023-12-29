@@ -5,7 +5,7 @@ const Input = () => {
   const { handleSubmit, newitem, setnewitem } = useContext(DataContext);
   const forFocus = useRef();
   return (
-    <div className="lg:w-[60%] xl:w-[40%] md:w-[600px] w-[90%] md:translate-y-0  xl:translate-y-[-.3rem] translate-y-[-.5rem]  xl:mt-8">
+    <div className="lg:w-[60%] xl:w-[40%] md:w-[600px] w-[90%] md:translate-y-0  xl:translate-y-[-.3rem] translate-y-[1.4rem]  xl:mt-8">
       <form action="" className="relative" onSubmit={handleSubmit}>
         <button
           className="h-5 rounded-full border-secondary   w-5 border-[1.5px] absolute top-[16px] left-4"

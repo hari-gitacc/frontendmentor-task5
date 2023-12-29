@@ -5,7 +5,7 @@ const Heading = () => {
   const { isDarkMode, toggleDarkMode } = useContext(DataContext);
 
   return (
-    <div className="flex items-center justify-between xl:translate-y-3 select-none lg:translate-y-[-1.4rem] md:translate-y-[-1rem] translate-y-[-1.5rem]    lg:w-[60%] xl:w-[40%] md:w-[600px] w-[90%]  ">
+    <div className="flex items-center justify-between xl:translate-y-3 select-none lg:translate-y-[-1.4rem] md:translate-y-[-1rem] translate-y-[0rem]    lg:w-[60%] xl:w-[40%] md:w-[600px] w-[90%]  ">
       <div className="text-white md:text-[2.4rem] text-[1.8rem]  font-[600] tracking-widest ">
         TODO
       </div>

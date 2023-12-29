@@ -24,7 +24,7 @@ const TodosLi = () => {
               />
            
               <label
-                className="ml-5 text-[15px] max-[373px]:ml-3 max-[373px]:text-[10.8px] max-[413px]:text-[13px] "
+                className="ml-5 text-[15px] max-[373px]:ml-3 max-[373px]:text-[13px] max-[413px]:text-[13px] "
                 style={
                   isDarkMode === "white"
                     ? item.checked
