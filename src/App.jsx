@@ -23,7 +23,7 @@ function App() {
           </div>
           <div className="bg-slate-900 text-white attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" className="to-blue-400" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="www.linkedin.com/in/hari-prasanth-developer"  className="to-blue-400" target="_blank">hari prasanth</a>.
+    Coded by <a href="https://www.linkedin.com/in/hari-prasanth-developer"  className="to-blue-400" target="_blank">hari prasanth</a>.
   </div>
         </div>
    
