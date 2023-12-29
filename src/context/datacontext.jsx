@@ -12,7 +12,7 @@ export const DataProvider = ({ children }) => {
       {
         id: 1,
         checked: true,
-        itemName: "complete online javascript course",
+        itemName: "complete javascript course",
       },
       {
         id: 2,
@@ -37,7 +37,7 @@ export const DataProvider = ({ children }) => {
       {
         id: 6,
         checked: false,
-        itemName: "complete todo app on frontend mentor",
+        itemName: "complete todo app task",
       },
     ];
 
