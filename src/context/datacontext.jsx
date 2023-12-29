@@ -36,7 +36,7 @@ export const DataProvider = ({ children }) => {
       },
     ];
 
-    const tasksToUse =  storedTasks.length===0?defaultTasks:storedTasks;
+    const tasksToUse =  defaultTasks||storedTasks;
    
 
     localStorage.setItem("items", JSON.stringify(tasksToUse));
@@ -47,6 +47,7 @@ export const DataProvider = ({ children }) => {
   const [count, setcount] = useState("0");
   const [newitem, setnewitem] = useState("");
   const [indicator, setindicator] = useState("all");
+  // console.log(originalList);
 
   const [isDarkMode, setIsDarkMode] = useState("white");
 
