@@ -11,7 +11,7 @@ function App() {
     <DataProvider>
       <main className="">
         <div className="sm:w-[100%] md:w-[100%]">
-          <div className="min-h-[30vh] md:h-[40vh] flex-col flex items-center bg-no-repeat dark:bg-no-repeat justify-center dark:bg-light bg-dark">
+          <div className="min-h-[30vh] md:h-[40vh] flex-col flex items-center  bg-no-repeat bg-cover dark:bg-cover dark:bg-no-repeat justify-center dark:bg-light bg-dark">
             <Heading />
             <Input />
           </div>
